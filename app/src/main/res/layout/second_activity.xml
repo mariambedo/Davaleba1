@@ -41,7 +41,7 @@
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Your Email"
+        android:hint="From:"
         android:inputType="text"
         android:shadowColor="@color/black"
         android:layout_marginTop="40dp"
@@ -61,7 +61,7 @@
         android:ems="10"
         android:padding="10dp"
         android:inputType="text"
-        android:hint="Enter Recipient's Email"
+        android:hint="To:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ReceivedEmail"
@@ -73,12 +73,11 @@
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:ems="10"
-        android:paddingTop="35dp"
         android:paddingLeft="15dp"
         android:layout_marginTop="40dp"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:hint="Enter Your Message Here"
+        android:hint="Message"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/receivedRecipient"
@@ -86,7 +85,7 @@
 
          />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,7 +98,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/receivedMessage"
         app:layout_constraintVertical_bias="0.0"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/clear"
          />
     />
 
